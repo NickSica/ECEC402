@@ -23,3 +23,15 @@ platform generate
 platform generate
 platform clean
 platform generate
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_2/led_drv_tb/system_wrapper.xsa}
+platform generate
+platform clean
+platform generate
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_2/led_drv_tb/system_wrapper.xsa}
+platform generate
+platform clean
+platform clean

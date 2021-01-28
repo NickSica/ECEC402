@@ -1,0 +1,7 @@
+16:06:54 **** Clean-only build of configuration Debug for project knight_rider ****
+make clean 
+rm -rf ./src/helloworld.o ./src/old_code.o ./src/platform.o ./src/helloworld.d ./src/old_code.d ./src/platform.d knight_rider.elf.size  knight_rider.elf
+ 
+
+16:06:54 Build Finished (took 169ms)
+

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="scw_hwspec" value="/home/nick/ECEC402/homework_1"/>
+	<item key="scw_hwspec" value="/home/nick/ECEC402/homework_2/led_drv_tb"/>
+	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="/home/nick/ECEC402/homework_2/led_drv_tb/led_drv_tb.runs/impl_1"/>
+	<item key="scw_hwspec_file_selection" value="/home/nick/ECEC402/homework_2/led_drv_tb"/>
 </section>

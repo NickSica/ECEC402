@@ -1,12 +1,14 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_1,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_TestApp_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_2,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_3
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_2,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_3,org.eclipse.launchbar.core.descriptorType.default\:Debugger_knight_rider-GDB
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default_1/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default_1/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_2/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_3/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_knight_rider-GDB/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_TestApp_system/activeLaunchMode=systemrun

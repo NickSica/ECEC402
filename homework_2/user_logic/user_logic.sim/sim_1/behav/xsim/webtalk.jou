@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 27 17:54:24 2021
+# Process ID: 625993
+# Current directory: /home/nick/ECEC402/homework_2/user_logic/user_logic.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/nick/ECEC402/homework_2/user_logic/user_logic.sim/sim_1/behav/xsim/xsim.dir/user_logic_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/nick/ECEC402/homework_2/user_logic/user_logic.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/nick/ECEC402/homework_2/user_logic/user_logic.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/nick/ECEC402/homework_2/user_logic/user_logic.sim/sim_1/behav/xsim/xsim.dir/user_logic_behav/webtalk/xsim_webtalk.tcl -notrace

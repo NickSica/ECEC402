@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="knight_rider" location="/home/nick/ECEC402/workspace/knight_rider" platform="/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="knight_rider_system" sysConfig="system_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="cd037520d5f8bf4a23e0625851ea256c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.778968273">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.774975421" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
