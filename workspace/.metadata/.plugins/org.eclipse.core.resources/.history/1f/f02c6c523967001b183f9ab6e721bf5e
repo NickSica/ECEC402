@@ -56,6 +56,8 @@
 #include "xscugic.h"
 #include "xil_exception.h"
 
+#define TIMER_FREQ XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ
+
 #define INTC_DEVICE_ID         XPAR_PS7_SCUGIC_0_DEVICE_ID
 #define TMR_DEVICE_ID          XPAR_TMRCTR_0_DEVICE_ID
 #define BTNS_DEVICE_ID         XPAR_AXI_GPIO_0_DEVICE_ID
