@@ -35,3 +35,34 @@ platform config -updatehw {/home/nick/ECEC402/homework_2/led_drv_tb/system_wrapp
 platform generate
 platform clean
 platform clean
+platform generate
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_3/project_1/system_wrapper.xsa}
+platform clean
+platform config -updatehw {/home/nick/ECEC402/homework_3/project_1/system_wrapper.xsa}
+platform write
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_3/led_blink/system_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {/home/nick/ECEC402/homework_3/led_blink/system_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform config -updatehw {/home/nick/ECEC402/homework_3/stopwatch/system_wrapper.xsa}
+platform generate
+platform generate
+platform clean
+platform generate
+platform clean
+platform clean

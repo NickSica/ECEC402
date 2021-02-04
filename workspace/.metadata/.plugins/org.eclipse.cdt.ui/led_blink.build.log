@@ -1,0 +1,7 @@
+15:43:24 **** Clean-only build of configuration Debug for project led_blink ****
+make clean 
+rm -rf ./src/helloworld.o ./src/platform.o ./src/helloworld.d ./src/platform.d led_blink.elf.size  led_blink.elf
+ 
+
+15:43:24 Build Finished (took 229ms)
+

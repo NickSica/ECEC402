@@ -176,15 +176,10 @@
 #define XPAR_PS7_SLCR_0_S_AXI_HIGHADDR 0xF8000FFF
 
 
-/* Definitions for peripheral PS7_QSPI_LINEAR_0 */
-#define XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR 0xFC000000
-#define XPAR_PS7_QSPI_LINEAR_0_S_AXI_HIGHADDR 0xFCFFFFFF
-
-
 /******************************************************************/
 
 /* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 2
+#define XPAR_XGPIO_NUM_INSTANCES 1
 
 /* Definitions for peripheral AXI_GPIO_0 */
 #define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
@@ -192,14 +187,6 @@
 #define XPAR_AXI_GPIO_0_DEVICE_ID 0
 #define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 1
 #define XPAR_AXI_GPIO_0_IS_DUAL 0
-
-
-/* Definitions for peripheral AXI_GPIO_1 */
-#define XPAR_AXI_GPIO_1_BASEADDR 0x41210000
-#define XPAR_AXI_GPIO_1_HIGHADDR 0x4121FFFF
-#define XPAR_AXI_GPIO_1_DEVICE_ID 1
-#define XPAR_AXI_GPIO_1_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_1_IS_DUAL 0
 
 
 /******************************************************************/
@@ -210,13 +197,6 @@
 #define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
 #define XPAR_GPIO_0_INTERRUPT_PRESENT 1
 #define XPAR_GPIO_0_IS_DUAL 0
-
-/* Canonical definitions for peripheral AXI_GPIO_1 */
-#define XPAR_GPIO_1_BASEADDR 0x41210000
-#define XPAR_GPIO_1_HIGHADDR 0x4121FFFF
-#define XPAR_GPIO_1_DEVICE_ID XPAR_AXI_GPIO_1_DEVICE_ID
-#define XPAR_GPIO_1_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_1_IS_DUAL 0
 
 
 /******************************************************************/
@@ -240,48 +220,14 @@
 
 /******************************************************************/
 
-/* Definitions for driver LED_DRV */
-#define XPAR_LED_DRV_NUM_INSTANCES 1
-
-/* Definitions for peripheral LED_DRV_0 */
-#define XPAR_LED_DRV_0_DEVICE_ID 0
-#define XPAR_LED_DRV_0_S00_AXI_BASEADDR 0x43C00000
-#define XPAR_LED_DRV_0_S00_AXI_HIGHADDR 0x43C0FFFF
-
-
-/******************************************************************/
-
-/* Definitions for driver QSPIPS */
-#define XPAR_XQSPIPS_NUM_INSTANCES 1
-
-/* Definitions for peripheral PS7_QSPI_0 */
-#define XPAR_PS7_QSPI_0_DEVICE_ID 0
-#define XPAR_PS7_QSPI_0_BASEADDR 0xE000D000
-#define XPAR_PS7_QSPI_0_HIGHADDR 0xE000DFFF
-#define XPAR_PS7_QSPI_0_QSPI_CLK_FREQ_HZ 200000000
-#define XPAR_PS7_QSPI_0_QSPI_MODE 0
-#define XPAR_PS7_QSPI_0_QSPI_BUS_WIDTH 2
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral PS7_QSPI_0 */
-#define XPAR_XQSPIPS_0_DEVICE_ID XPAR_PS7_QSPI_0_DEVICE_ID
-#define XPAR_XQSPIPS_0_BASEADDR 0xE000D000
-#define XPAR_XQSPIPS_0_HIGHADDR 0xE000DFFF
-#define XPAR_XQSPIPS_0_QSPI_CLK_FREQ_HZ 200000000
-#define XPAR_XQSPIPS_0_QSPI_MODE 0
-#define XPAR_XQSPIPS_0_QSPI_BUS_WIDTH 2
-
-
-/******************************************************************/
-
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR 61U
+#define XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR 61U
+#define XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR 62U
 
 /******************************************************************/
 
 /* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_TMRCTR_0_VEC_ID XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
 #define XPAR_FABRIC_GPIO_0_VEC_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
 
 /******************************************************************/
@@ -345,36 +291,23 @@
 
 /******************************************************************/
 
-/* Definitions for driver SDPS */
-#define XPAR_XSDPS_NUM_INSTANCES 1
+/* Definitions for driver TMRCTR */
+#define XPAR_XTMRCTR_NUM_INSTANCES 1U
 
-/* Definitions for peripheral PS7_SD_0 */
-#define XPAR_PS7_SD_0_DEVICE_ID 0
-#define XPAR_PS7_SD_0_BASEADDR 0xE0100000
-#define XPAR_PS7_SD_0_HIGHADDR 0xE0100FFF
-#define XPAR_PS7_SD_0_SDIO_CLK_FREQ_HZ 50000000
-#define XPAR_PS7_SD_0_HAS_CD 1
-#define XPAR_PS7_SD_0_HAS_WP 0
-#define XPAR_PS7_SD_0_BUS_WIDTH 0
-#define XPAR_PS7_SD_0_MIO_BANK 0
-#define XPAR_PS7_SD_0_HAS_EMIO 0
+/* Definitions for peripheral AXI_TIMER_0 */
+#define XPAR_AXI_TIMER_0_DEVICE_ID 0U
+#define XPAR_AXI_TIMER_0_BASEADDR 0x42800000U
+#define XPAR_AXI_TIMER_0_HIGHADDR 0x4280FFFFU
+#define XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ 50000000U
 
 
 /******************************************************************/
 
-#define XPAR_PS7_SD_0_IS_CACHE_COHERENT 0
-/* Canonical definitions for peripheral PS7_SD_0 */
-#define XPAR_XSDPS_0_DEVICE_ID XPAR_PS7_SD_0_DEVICE_ID
-#define XPAR_XSDPS_0_BASEADDR 0xE0100000
-#define XPAR_XSDPS_0_HIGHADDR 0xE0100FFF
-#define XPAR_XSDPS_0_SDIO_CLK_FREQ_HZ 50000000
-#define XPAR_XSDPS_0_HAS_CD 1
-#define XPAR_XSDPS_0_HAS_WP 0
-#define XPAR_XSDPS_0_BUS_WIDTH 0
-#define XPAR_XSDPS_0_MIO_BANK 0
-#define XPAR_XSDPS_0_HAS_EMIO 0
-#define XPAR_XSDPS_0_IS_CACHE_COHERENT 0
-
+/* Canonical definitions for peripheral AXI_TIMER_0 */
+#define XPAR_TMRCTR_0_DEVICE_ID 0U
+#define XPAR_TMRCTR_0_BASEADDR 0x42800000U
+#define XPAR_TMRCTR_0_HIGHADDR 0x4280FFFFU
+#define XPAR_TMRCTR_0_CLOCK_FREQ_HZ XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ
 
 /******************************************************************/
 
@@ -422,7 +355,6 @@
 /******************************************************************/
 
 /* Xilinx FAT File System Library (XilFFs) User Settings */
-#define FILE_SYSTEM_INTERFACE_SD
 #define FILE_SYSTEM_USE_MKFS
 #define FILE_SYSTEM_NUM_LOGIC_VOL 2
 #define FILE_SYSTEM_USE_STRFUNC 0

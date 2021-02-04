@@ -5,13 +5,17 @@
 		<item key="DIALOG_Y_ORIGIN" value="413"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="TMR_Intr_Handler"/>
+		<item key="selection" value="Xil_Exception"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Xil_Exception1"/>
+			<item value="Xil_Exception"/>
+			<item value="TMR_FREQ"/>
+			<item value="InterruptSystemSetup"/>
 			<item value="TMR_Intr_Handler"/>
 			<item value="TMR_LOAD"/>
 			<item value="for ("/>

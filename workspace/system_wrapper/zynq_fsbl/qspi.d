@@ -16,9 +16,7 @@ qspi.o: qspi.c qspi.h fsbl.h \
  zynq_fsbl_bsp/ps7_cortexa9_0/include/xdevcfg.h \
  zynq_fsbl_bsp/ps7_cortexa9_0/include/xdevcfg_hw.h \
  zynq_fsbl_bsp/ps7_cortexa9_0/include/xil_io.h fsbl_debug.h ps7_init.h \
- image_mover.h zynq_fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h \
- zynq_fsbl_bsp/ps7_cortexa9_0/include/xqspips.h \
- zynq_fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h
+ image_mover.h
 
 qspi.h:
 
@@ -65,9 +63,3 @@ fsbl_debug.h:
 ps7_init.h:
 
 image_mover.h:
-
-zynq_fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h:
-
-zynq_fsbl_bsp/ps7_cortexa9_0/include/xqspips.h:
-
-zynq_fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h:

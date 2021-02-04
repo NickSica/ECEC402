@@ -1,8 +1,8 @@
-16:06:54 **** Clean-only build of configuration Debug for project knight_rider_system ****
+15:11:36 **** Clean-only build of configuration Debug for project knight_rider_system ****
 make clean 
 rm -rf ./_sds
 rm -rf package
 rm -f system.bif
 
-16:06:55 Build Finished (took 223ms)
+15:11:36 Build Finished (took 225ms)
 
