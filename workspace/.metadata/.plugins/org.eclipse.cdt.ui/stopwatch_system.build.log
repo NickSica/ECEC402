@@ -1,8 +1,8 @@
-17:32:44 **** Clean-only build of configuration Debug for project stopwatch_system ****
+16:03:09 **** Clean-only build of configuration Debug for project stopwatch_system ****
 make clean 
 rm -rf ./_sds
 rm -rf package
 rm -f system.bif
 
-17:32:44 Build Finished (took 221ms)
+16:03:09 Build Finished (took 174ms)
 

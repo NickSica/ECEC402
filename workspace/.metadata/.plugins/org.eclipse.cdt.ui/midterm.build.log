@@ -1,0 +1,7 @@
+16:44:21 **** Clean-only build of configuration Debug for project midterm ****
+make clean 
+rm -rf ./src/double_press.o ./src/helloworld.o ./src/platform.o ./src/single_press.o ./src/double_press.d ./src/helloworld.d ./src/platform.d ./src/single_press.d midterm.elf.size  midterm.elf
+ 
+
+16:44:22 Build Finished (took 177ms)
+

@@ -1,7 +1,7 @@
-17:32:44 **** Clean-only build of configuration Debug for project stopwatch ****
+16:03:08 **** Clean-only build of configuration Debug for project stopwatch ****
 make clean 
 rm -rf ./src/helloworld.o ./src/platform.o ./src/helloworld.d ./src/platform.d stopwatch.elf.size  stopwatch.elf
  
 
-17:32:44 Build Finished (took 218ms)
+16:03:08 Build Finished (took 170ms)
 

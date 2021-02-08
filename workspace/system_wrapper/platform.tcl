@@ -66,3 +66,12 @@ platform clean
 platform generate
 platform clean
 platform clean
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_3/led_blink/system_wrapper.xsa}
+platform generate
+platform clean
+platform generate
+platform generate
+platform clean
+platform clean

@@ -281,3 +281,41 @@ timestamp=[2021-02-04 17:32:44], mode=PLATFORM_GENERATION, duration=0:00:05.610,
 timestamp=[2021-02-04 17:32:44], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=stopwatch, configuration=Debug, clean_build=true}
 timestamp=[2021-02-04 17:32:44], mode=BUILD, duration=0:00:00.227, duration_ms=227, data={name=stopwatch_system, configuration=Debug, clean_build=true}
 timestamp=[2021-02-04 17:33:23], mode=PLATFORM_GENERATION, duration=0:00:05.481, duration_ms=5481, data={name=system_wrapper}
+timestamp=[2021-02-04 17:40:49], mode=WORKBENCH_START, duration=0:00:09.045, duration_ms=9045, data={}
+timestamp=[2021-02-04 17:40:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.044, duration_ms=44, data={}
+timestamp=[2021-02-04 17:40:51], mode=WORKBENCH_UI_INIT, duration=0:00:01.631, duration_ms=1631, data={editors_count=1, platform_editors_count=0, projects_count=10, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TestApp,TestApp_system,knight_rider,knight_rider_system,led_blink,led_blink_system,stopwatch,stopwatch_system,system_wrapper}
+timestamp=[2021-02-08 16:02:38], mode=WORKBENCH_START, duration=0:00:09.091, duration_ms=9091, data={}
+timestamp=[2021-02-08 16:02:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.025, duration_ms=25, data={}
+timestamp=[2021-02-08 16:02:40], mode=WORKBENCH_UI_INIT, duration=0:00:01.641, duration_ms=1641, data={editors_count=1, platform_editors_count=0, projects_count=10, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TestApp,TestApp_system,knight_rider,knight_rider_system,led_blink,led_blink_system,stopwatch,stopwatch_system,system_wrapper}
+timestamp=[2021-02-08 16:03:08], mode=PLATFORM_GENERATION, duration=0:00:08.565, duration_ms=8565, data={name=system_wrapper}
+timestamp=[2021-02-08 16:03:08], mode=BUILD, duration=0:00:00.180, duration_ms=180, data={name=stopwatch, configuration=Debug, clean_build=true}
+timestamp=[2021-02-08 16:03:09], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=stopwatch_system, configuration=Debug, clean_build=true}
+timestamp=[2021-02-08 16:03:53], mode=PLATFORM_GENERATION, duration=0:00:14.162, duration_ms=14162, data={name=system_wrapper}
+timestamp=[2021-02-08 16:06:59], mode=APP_CREATION, duration=0:00:04.957, duration_ms=4957, data={name=midterm, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2021-02-08 16:20:53], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:20:59], mode=BUILD, duration=0:00:05.356, duration_ms=5356, data={name=midterm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:23:10], mode=BUILD, duration=0:00:00.374, duration_ms=374, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:23:17], mode=BUILD, duration=0:00:06.602, duration_ms=6602, data={name=midterm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:24:41], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:24:49], mode=BUILD, duration=0:00:06.640, duration_ms=6640, data={name=midterm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:26:49], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:26:56], mode=BUILD, duration=0:00:06.605, duration_ms=6605, data={name=midterm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:27:10], mode=PLATFORM_GENERATION, duration=0:00:05.510, duration_ms=5510, data={name=system_wrapper}
+timestamp=[2021-02-08 16:27:10], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=midterm, configuration=Debug, clean_build=true}
+timestamp=[2021-02-08 16:27:10], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=midterm_system, configuration=Debug, clean_build=true}
+timestamp=[2021-02-08 16:27:20], mode=PLATFORM_GENERATION, duration=0:00:10.055, duration_ms=10055, data={name=system_wrapper}
+timestamp=[2021-02-08 16:27:22], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:27:29], mode=BUILD, duration=0:00:06.634, duration_ms=6634, data={name=midterm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:39:56], mode=WORKBENCH_START, duration=0:00:09.007, duration_ms=9007, data={}
+timestamp=[2021-02-08 16:39:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.071, duration_ms=71, data={}
+timestamp=[2021-02-08 16:39:57], mode=WORKBENCH_UI_INIT, duration=0:00:01.685, duration_ms=1685, data={editors_count=4, platform_editors_count=0, projects_count=12, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TestApp,TestApp_system,knight_rider,knight_rider_system,led_blink,led_blink_system,midterm,midterm_system,stopwatch,stopwatch_system,system_wrapper}
+timestamp=[2021-02-08 16:41:54], mode=PLATFORM_GENERATION, duration=0:00:08.886, duration_ms=8886, data={name=system_wrapper}
+timestamp=[2021-02-08 16:41:55], mode=BUILD, duration=0:00:00.534, duration_ms=534, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:42:01], mode=BUILD, duration=0:00:05.409, duration_ms=5409, data={name=midterm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:42:42], mode=BUILD, duration=0:00:00.373, duration_ms=373, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:42:49], mode=BUILD, duration=0:00:06.565, duration_ms=6565, data={name=midterm_system, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:43:32], mode=BUILD, duration=0:00:00.327, duration_ms=327, data={name=midterm, configuration=Debug, clean_build=false}
+timestamp=[2021-02-08 16:44:21], mode=PLATFORM_GENERATION, duration=0:00:05.539, duration_ms=5539, data={name=system_wrapper}
+timestamp=[2021-02-08 16:44:22], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=midterm, configuration=Debug, clean_build=true}
+timestamp=[2021-02-08 16:44:22], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=midterm_system, configuration=Debug, clean_build=true}
+timestamp=[2021-02-08 16:44:28], mode=PLATFORM_GENERATION, duration=0:00:05.376, duration_ms=5376, data={name=system_wrapper}

@@ -109,7 +109,6 @@ int main(void)
 	status = IntcInit(INTC_DEVICE_ID, &TMRInst, &BTNInst);
 	if(status != XST_SUCCESS) return XST_FAILURE;
 
-
 	while(1);
 
 	cleanup_platform();
