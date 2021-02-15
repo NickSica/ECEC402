@@ -1,0 +1,7 @@
+17:09:17 **** Clean-only build of configuration Debug for project midterm_problem_1 ****
+make clean 
+rm -rf ./src/helloworld.o ./src/platform.o ./src/helloworld.d ./src/platform.d midterm_problem_1.elf.size  midterm_problem_1.elf
+ 
+
+17:09:17 Build Finished (took 174ms)
+

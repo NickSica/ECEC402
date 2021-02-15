@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Feb 15 16:13:56 2021
+# Process ID: 2969804
+# Current directory: /home/nick/ECEC402/midterm/problem_1/user_logic/user_logic.runs/synth_1
+# Command line: vivado -log user_logic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_logic.tcl
+# Log file: /home/nick/ECEC402/midterm/problem_1/user_logic/user_logic.runs/synth_1/user_logic.vds
+# Journal file: /home/nick/ECEC402/midterm/problem_1/user_logic/user_logic.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source user_logic.tcl -notrace

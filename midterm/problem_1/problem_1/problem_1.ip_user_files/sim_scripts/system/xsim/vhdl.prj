@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ipshared/1882/hdl/led_drv_v1_0_S00_AXI.vhd" \
+"../../../bd/system/ipshared/1882/src/user_logic.vhd" \
+"../../../bd/system/ipshared/1882/hdl/led_drv_v1_0.vhd" \
+"../../../bd/system/ip/system_led_drv_0_0/sim/system_led_drv_0_0.vhd" \
+"../../../bd/system/ip/system_rst_ps7_0_50M_0/sim/system_rst_ps7_0_50M_0.vhd" \
+"../../../bd/system/sim/system.vhd" \
+
+nosort

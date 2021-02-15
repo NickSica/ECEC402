@@ -1,0 +1,49 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon Feb 15 17:00:50 2021
+| Host         : nick-linux running 64-bit unknown
+| Command      : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+| Design       : system_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/z[3]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/FSM_onehot_n_s_reg[0],
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/FSM_onehot_n_s_reg[1],
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/FSM_onehot_n_s_reg[2],
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/FSM_onehot_n_s_reg[3],
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/z_reg[0],
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/z_reg[1],
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/z_reg[2]
+system_i/led_drv_0/U0/led_drv_v1_0_S00_AXI_inst/U/z_reg[3]
+Related violations: <none>
+
+

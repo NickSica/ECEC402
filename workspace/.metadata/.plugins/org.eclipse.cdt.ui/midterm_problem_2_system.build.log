@@ -1,0 +1,8 @@
+17:49:10 **** Clean-only build of configuration Debug for project midterm_problem_2_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+17:49:10 Build Finished (took 214ms)
+

@@ -75,3 +75,24 @@ platform generate
 platform generate
 platform clean
 platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/midterm/problem_1/problem_1/system_wrapper.xsa}
+platform generate
+platform clean
+platform config -updatehw {/home/nick/ECEC402/midterm/problem_2/problem_2/system_wrapper.xsa}
+platform generate
+platform clean
+platform config -updatehw {/home/nick/ECEC402/midterm/problem_2/problem_2/system_wrapper.xsa}
+platform generate
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/midterm/problem_2/problem_2/system_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {/home/nick/ECEC402/midterm/problem_2/problem_2/system_wrapper.xsa}
+platform generate -domains 
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_3/led_blink/system_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform clean
