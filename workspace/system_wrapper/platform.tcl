@@ -96,3 +96,27 @@ platform config -updatehw {/home/nick/ECEC402/homework_3/led_blink/system_wrappe
 platform generate -domains 
 platform clean
 platform clean
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_4/fp_acc/system_wrapper.xsa}
+platform generate
+platform generate -domains 
+platform config -updatehw {/home/nick/ECEC402/homework_4/sqrt_acc/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {/home/nick/ECEC402/homework_4/sqrt_acc/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {/home/nick/ECEC402/homework_4/sqrt_acc/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {/home/nick/ECEC402/homework_4/sqrt_acc/system_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {/home/nick/ECEC402/homework_4/sqrt_acc/system_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform clean
+platform config -updatehw {/home/nick/ECEC402/homework_4/fp_acc/system_wrapper.xsa}
+platform generate
+platform clean
+platform generate
+platform clean
+platform clean
+platform clean

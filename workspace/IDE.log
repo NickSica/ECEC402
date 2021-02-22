@@ -5020,3 +5020,1852 @@ con
 ----------------End of Script----------------
 
 17:48:41 INFO  : Disconnected from the channel tcfchan#7.
+17:17:26 INFO  : Launching XSCT server: xsct -n  -interactive /home/nick/ECEC402/workspace/temp_xsdb_launch_script.tcl
+17:17:29 INFO  : XSCT server has started successfully.
+17:17:29 INFO  : plnx-install-location is set to ''
+17:17:29 INFO  : Successfully done setting XSCT server connection channel  
+17:17:29 INFO  : Successfully done setting workspace for the tool. 
+17:17:30 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+17:17:30 INFO  : Platform repository initialization has completed.
+17:17:30 INFO  : Successfully done query RDI_DATADIR 
+17:17:30 INFO  : Registering command handlers for Vitis TCF services
+17:17:58 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+17:18:17 INFO  : Result from executing command 'getProjects': system_wrapper
+17:18:17 INFO  : Result from executing command 'getPlatforms': 
+17:51:40 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:52:30 INFO  : Connected to target on host '192.168.1.176' and port '3121'.
+17:52:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:52:32 INFO  : Device configured successfully with "/home/nick/ECEC402/homework_4/fp_acc/fp_acc.runs/impl_1/system_wrapper.bit"
+17:52:45 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:52:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:52:45 INFO  : 'jtag frequency' command is executed.
+17:52:45 INFO  : Context for 'APU' is selected.
+17:52:45 INFO  : System reset is completed.
+17:52:48 INFO  : 'after 3000' command is executed.
+17:52:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:52:49 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:52:50 INFO  : Context for 'APU' is selected.
+17:52:50 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:52:50 INFO  : 'configparams force-mem-access 1' command is executed.
+17:52:50 INFO  : Context for 'APU' is selected.
+17:52:50 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:52:51 INFO  : 'ps7_init' command is executed.
+17:52:51 INFO  : 'ps7_post_config' command is executed.
+17:52:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:52:51 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:52:51 INFO  : 'configparams force-mem-access 0' command is executed.
+17:52:51 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:52:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:52:51 INFO  : 'con' command is executed.
+17:52:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:52:51 INFO  : Disconnected from the channel tcfchan#5.
+17:54:03 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:54:21 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:54:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:54:21 INFO  : 'jtag frequency' command is executed.
+17:54:21 INFO  : Context for 'APU' is selected.
+17:54:21 INFO  : System reset is completed.
+17:54:24 INFO  : 'after 3000' command is executed.
+17:54:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:54:26 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:54:26 INFO  : Context for 'APU' is selected.
+17:54:26 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:54:26 INFO  : 'configparams force-mem-access 1' command is executed.
+17:54:26 INFO  : Context for 'APU' is selected.
+17:54:26 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:54:27 INFO  : 'ps7_init' command is executed.
+17:54:27 INFO  : 'ps7_post_config' command is executed.
+17:54:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:54:27 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:54:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:54:27 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:54:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:54:27 INFO  : 'con' command is executed.
+17:54:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:54:27 INFO  : Disconnected from the channel tcfchan#7.
+17:58:39 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:58:53 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:58:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:58:53 INFO  : 'jtag frequency' command is executed.
+17:58:53 INFO  : Context for 'APU' is selected.
+17:58:53 INFO  : System reset is completed.
+17:58:57 INFO  : 'after 3000' command is executed.
+17:58:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:58:58 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:58:58 INFO  : Context for 'APU' is selected.
+17:58:58 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:58:58 INFO  : 'configparams force-mem-access 1' command is executed.
+17:58:58 INFO  : Context for 'APU' is selected.
+17:58:58 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:58:59 INFO  : 'ps7_init' command is executed.
+17:58:59 INFO  : 'ps7_post_config' command is executed.
+17:58:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:58:59 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:58:59 INFO  : 'configparams force-mem-access 0' command is executed.
+17:58:59 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:59:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:00 INFO  : 'con' command is executed.
+17:59:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:59:00 INFO  : Disconnected from the channel tcfchan#9.
+18:00:27 INFO  : Connected to target on host '192.168.1.176' and port '3121'.
+18:00:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:00:28 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:00:36 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:00:53 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:00:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:00:53 INFO  : 'jtag frequency' command is executed.
+18:00:53 INFO  : Context for 'APU' is selected.
+18:00:53 INFO  : System reset is completed.
+18:00:56 INFO  : 'after 3000' command is executed.
+18:00:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:00:57 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:00:57 INFO  : Context for 'APU' is selected.
+18:00:57 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:00:57 INFO  : 'configparams force-mem-access 1' command is executed.
+18:00:57 INFO  : Context for 'APU' is selected.
+18:00:57 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:00:58 INFO  : 'ps7_init' command is executed.
+18:00:59 INFO  : 'ps7_post_config' command is executed.
+18:00:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:00:59 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:00:59 INFO  : 'configparams force-mem-access 0' command is executed.
+18:00:59 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:00:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:00:59 INFO  : 'con' command is executed.
+18:00:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:00:59 INFO  : Disconnected from the channel tcfchan#11.
+18:06:20 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:06:59 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:06:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:06:59 INFO  : 'jtag frequency' command is executed.
+18:06:59 INFO  : Context for 'APU' is selected.
+18:07:00 INFO  : System reset is completed.
+18:07:03 INFO  : 'after 3000' command is executed.
+18:07:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:07:04 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:07:04 INFO  : Context for 'APU' is selected.
+18:07:04 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:07:04 INFO  : 'configparams force-mem-access 1' command is executed.
+18:07:04 INFO  : Context for 'APU' is selected.
+18:07:04 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:07:05 INFO  : 'ps7_init' command is executed.
+18:07:05 INFO  : 'ps7_post_config' command is executed.
+18:07:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:05 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:07:05 INFO  : 'configparams force-mem-access 0' command is executed.
+18:07:05 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:07:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:05 INFO  : 'con' command is executed.
+18:07:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:07:05 INFO  : Disconnected from the channel tcfchan#13.
+18:08:50 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:09:05 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:09:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:09:05 INFO  : 'jtag frequency' command is executed.
+18:09:05 INFO  : Context for 'APU' is selected.
+18:09:05 INFO  : System reset is completed.
+18:09:08 INFO  : 'after 3000' command is executed.
+18:09:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:09:10 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:09:10 INFO  : Context for 'APU' is selected.
+18:09:10 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:09:10 INFO  : 'configparams force-mem-access 1' command is executed.
+18:09:10 INFO  : Context for 'APU' is selected.
+18:09:10 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:09:11 INFO  : 'ps7_init' command is executed.
+18:09:11 INFO  : 'ps7_post_config' command is executed.
+18:09:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:11 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:09:11 INFO  : 'configparams force-mem-access 0' command is executed.
+18:09:11 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:09:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:11 INFO  : 'con' command is executed.
+18:09:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:09:11 INFO  : Disconnected from the channel tcfchan#15.
+18:13:55 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:13:55 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:13:55 INFO  : 'jtag frequency' command is executed.
+18:13:55 INFO  : Context for 'APU' is selected.
+18:13:55 INFO  : System reset is completed.
+18:13:58 INFO  : 'after 3000' command is executed.
+18:13:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:14:00 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:14:00 INFO  : Context for 'APU' is selected.
+18:14:00 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:14:00 INFO  : 'configparams force-mem-access 1' command is executed.
+18:14:00 INFO  : Context for 'APU' is selected.
+18:14:00 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:14:01 INFO  : 'ps7_init' command is executed.
+18:14:01 INFO  : 'ps7_post_config' command is executed.
+18:14:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:01 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:14:01 INFO  : 'configparams force-mem-access 0' command is executed.
+18:14:01 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:14:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:01 INFO  : 'con' command is executed.
+18:14:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:14:01 INFO  : Launch script is exported to file '/home/nick/ECEC402/workspace/fp_acc_system/_ide/scripts/debugger_fp_acc-default.tcl'
+18:14:36 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:14:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:14:36 INFO  : 'jtag frequency' command is executed.
+18:14:36 INFO  : Context for 'APU' is selected.
+18:14:37 INFO  : System reset is completed.
+18:14:40 INFO  : 'after 3000' command is executed.
+18:14:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:14:41 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:14:41 INFO  : Context for 'APU' is selected.
+18:14:41 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:14:41 INFO  : 'configparams force-mem-access 1' command is executed.
+18:14:41 INFO  : Context for 'APU' is selected.
+18:14:41 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:14:42 INFO  : 'ps7_init' command is executed.
+18:14:42 INFO  : 'ps7_post_config' command is executed.
+18:14:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:42 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:14:42 INFO  : 'configparams force-mem-access 0' command is executed.
+18:14:42 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:15:30 INFO  : Disconnected from the channel tcfchan#16.
+18:16:02 WARN  : channel "tcfchan#16" closed
+18:16:15 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:16:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:16:15 INFO  : 'jtag frequency' command is executed.
+18:16:15 INFO  : Context for 'APU' is selected.
+18:16:15 INFO  : System reset is completed.
+18:16:18 INFO  : 'after 3000' command is executed.
+18:16:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:16:20 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:16:20 INFO  : Context for 'APU' is selected.
+18:16:20 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:16:20 INFO  : 'configparams force-mem-access 1' command is executed.
+18:16:20 INFO  : Context for 'APU' is selected.
+18:16:20 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:16:21 INFO  : 'ps7_init' command is executed.
+18:16:21 INFO  : 'ps7_post_config' command is executed.
+18:16:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:16:21 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:16:21 INFO  : 'configparams force-mem-access 0' command is executed.
+18:16:21 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:18:02 INFO  : Disconnected from the channel tcfchan#17.
+18:18:06 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:18:16 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:18:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:18:16 INFO  : 'jtag frequency' command is executed.
+18:18:16 INFO  : Context for 'APU' is selected.
+18:18:16 INFO  : System reset is completed.
+18:18:19 INFO  : 'after 3000' command is executed.
+18:18:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:18:20 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:18:20 INFO  : Context for 'APU' is selected.
+18:18:20 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:18:20 INFO  : 'configparams force-mem-access 1' command is executed.
+18:18:20 INFO  : Context for 'APU' is selected.
+18:18:20 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:18:21 INFO  : 'ps7_init' command is executed.
+18:18:21 INFO  : 'ps7_post_config' command is executed.
+18:18:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:22 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:18:22 INFO  : 'configparams force-mem-access 0' command is executed.
+18:18:22 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:18:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:22 INFO  : 'con' command is executed.
+18:18:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:18:22 INFO  : Disconnected from the channel tcfchan#19.
+18:18:45 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:18:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:18:45 INFO  : 'jtag frequency' command is executed.
+18:18:45 INFO  : Context for 'APU' is selected.
+18:18:45 INFO  : System reset is completed.
+18:18:48 INFO  : 'after 3000' command is executed.
+18:18:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:18:49 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:18:49 INFO  : Context for 'APU' is selected.
+18:18:49 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:18:49 INFO  : 'configparams force-mem-access 1' command is executed.
+18:18:49 INFO  : Context for 'APU' is selected.
+18:18:49 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:18:50 INFO  : 'ps7_init' command is executed.
+18:18:50 INFO  : 'ps7_post_config' command is executed.
+18:18:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:50 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:18:50 INFO  : 'configparams force-mem-access 0' command is executed.
+18:18:50 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:38:36 INFO  : Disconnected from the channel tcfchan#20.
+18:38:39 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:38:56 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:38:56 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:38:56 INFO  : 'jtag frequency' command is executed.
+18:38:56 INFO  : Context for 'APU' is selected.
+18:38:56 INFO  : System reset is completed.
+18:38:59 INFO  : 'after 3000' command is executed.
+18:38:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:39:01 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:39:01 INFO  : Context for 'APU' is selected.
+18:39:01 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:39:01 INFO  : 'configparams force-mem-access 1' command is executed.
+18:39:01 INFO  : Context for 'APU' is selected.
+18:39:01 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:39:02 INFO  : 'ps7_init' command is executed.
+18:39:02 INFO  : 'ps7_post_config' command is executed.
+18:39:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:39:02 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:39:02 INFO  : 'configparams force-mem-access 0' command is executed.
+18:39:02 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:39:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:39:02 INFO  : 'con' command is executed.
+18:39:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:39:02 INFO  : Disconnected from the channel tcfchan#22.
+18:39:22 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:39:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:39:23 INFO  : 'jtag frequency' command is executed.
+18:39:23 INFO  : Context for 'APU' is selected.
+18:39:23 INFO  : System reset is completed.
+18:39:26 INFO  : 'after 3000' command is executed.
+18:39:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:39:27 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:39:27 INFO  : Context for 'APU' is selected.
+18:39:27 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:39:27 INFO  : 'configparams force-mem-access 1' command is executed.
+18:39:27 INFO  : Context for 'APU' is selected.
+18:39:27 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:39:28 INFO  : 'ps7_init' command is executed.
+18:39:28 INFO  : 'ps7_post_config' command is executed.
+18:39:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:39:28 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:39:28 INFO  : 'configparams force-mem-access 0' command is executed.
+18:39:28 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:39:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:39:28 INFO  : 'con' command is executed.
+18:39:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:39:28 INFO  : Disconnected from the channel tcfchan#23.
+18:40:03 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:40:23 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:40:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:40:23 INFO  : 'jtag frequency' command is executed.
+18:40:23 INFO  : Context for 'APU' is selected.
+18:40:23 INFO  : System reset is completed.
+18:40:26 INFO  : 'after 3000' command is executed.
+18:40:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:40:27 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:40:27 INFO  : Context for 'APU' is selected.
+18:40:27 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:40:27 INFO  : 'configparams force-mem-access 1' command is executed.
+18:40:27 INFO  : Context for 'APU' is selected.
+18:40:27 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:40:28 INFO  : 'ps7_init' command is executed.
+18:40:28 INFO  : 'ps7_post_config' command is executed.
+18:40:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:40:29 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:40:29 INFO  : 'configparams force-mem-access 0' command is executed.
+18:40:29 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:40:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:40:29 INFO  : 'con' command is executed.
+18:40:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:40:29 INFO  : Disconnected from the channel tcfchan#25.
+18:42:29 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:42:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:42:29 INFO  : 'jtag frequency' command is executed.
+18:42:29 INFO  : Context for 'APU' is selected.
+18:42:29 INFO  : System reset is completed.
+18:42:32 INFO  : 'after 3000' command is executed.
+18:42:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:42:34 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:42:34 INFO  : Context for 'APU' is selected.
+18:42:34 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:42:34 INFO  : 'configparams force-mem-access 1' command is executed.
+18:42:34 INFO  : Context for 'APU' is selected.
+18:42:34 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:42:35 INFO  : 'ps7_init' command is executed.
+18:42:35 INFO  : 'ps7_post_config' command is executed.
+18:42:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:42:35 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:42:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:42:35 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:42:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:42:35 INFO  : 'con' command is executed.
+18:42:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:42:35 INFO  : Disconnected from the channel tcfchan#26.
+18:42:41 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:42:53 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:42:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:42:53 INFO  : 'jtag frequency' command is executed.
+18:42:53 INFO  : Context for 'APU' is selected.
+18:42:53 INFO  : System reset is completed.
+18:42:56 INFO  : 'after 3000' command is executed.
+18:42:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:42:58 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:42:58 INFO  : Context for 'APU' is selected.
+18:42:58 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:42:58 INFO  : 'configparams force-mem-access 1' command is executed.
+18:42:58 INFO  : Context for 'APU' is selected.
+18:42:58 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:42:59 INFO  : 'ps7_init' command is executed.
+18:42:59 INFO  : 'ps7_post_config' command is executed.
+18:42:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:42:59 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:42:59 INFO  : 'configparams force-mem-access 0' command is executed.
+18:42:59 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:42:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:42:59 INFO  : 'con' command is executed.
+18:42:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:42:59 INFO  : Disconnected from the channel tcfchan#28.
+18:43:53 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:43:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:43:53 INFO  : 'jtag frequency' command is executed.
+18:43:54 INFO  : Context for 'APU' is selected.
+18:43:54 INFO  : System reset is completed.
+18:43:57 INFO  : 'after 3000' command is executed.
+18:43:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:43:58 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:43:58 INFO  : Context for 'APU' is selected.
+18:43:58 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:43:58 INFO  : 'configparams force-mem-access 1' command is executed.
+18:43:58 INFO  : Context for 'APU' is selected.
+18:43:58 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:43:59 INFO  : 'ps7_init' command is executed.
+18:43:59 INFO  : 'ps7_post_config' command is executed.
+18:43:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:43:59 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:43:59 INFO  : 'configparams force-mem-access 0' command is executed.
+18:43:59 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:55:00 INFO  : Disconnected from the channel tcfchan#29.
+19:42:26 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+19:43:10 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+19:43:56 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+19:44:19 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+19:44:19 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+19:44:19 INFO  : 'jtag frequency' command is executed.
+19:44:19 INFO  : Context for 'APU' is selected.
+19:44:19 INFO  : System reset is completed.
+19:44:22 INFO  : 'after 3000' command is executed.
+19:44:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+19:44:23 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+19:44:23 INFO  : Context for 'APU' is selected.
+19:44:23 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:44:23 INFO  : 'configparams force-mem-access 1' command is executed.
+19:44:23 INFO  : Context for 'APU' is selected.
+19:44:23 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+19:44:25 INFO  : 'ps7_init' command is executed.
+19:44:25 INFO  : 'ps7_post_config' command is executed.
+19:44:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:44:25 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:44:25 INFO  : 'configparams force-mem-access 0' command is executed.
+19:44:25 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:44:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:44:25 INFO  : 'con' command is executed.
+19:44:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:44:25 INFO  : Disconnected from the channel tcfchan#33.
+19:54:14 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+19:54:33 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+19:54:33 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+19:54:33 INFO  : 'jtag frequency' command is executed.
+19:54:33 INFO  : Context for 'APU' is selected.
+19:54:33 INFO  : System reset is completed.
+19:54:36 INFO  : 'after 3000' command is executed.
+19:54:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+19:54:38 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+19:54:38 INFO  : Context for 'APU' is selected.
+19:54:38 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:54:38 INFO  : 'configparams force-mem-access 1' command is executed.
+19:54:38 INFO  : Context for 'APU' is selected.
+19:54:38 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+19:54:39 INFO  : 'ps7_init' command is executed.
+19:54:39 INFO  : 'ps7_post_config' command is executed.
+19:54:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:54:39 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:54:39 INFO  : 'configparams force-mem-access 0' command is executed.
+19:54:39 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:54:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:54:39 INFO  : 'con' command is executed.
+19:54:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:54:39 INFO  : Disconnected from the channel tcfchan#35.
+19:55:19 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+19:55:43 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+19:55:57 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+19:55:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+19:55:58 INFO  : 'jtag frequency' command is executed.
+19:55:58 INFO  : Context for 'APU' is selected.
+19:55:58 INFO  : System reset is completed.
+19:56:01 INFO  : 'after 3000' command is executed.
+19:56:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+19:56:02 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+19:56:02 INFO  : Context for 'APU' is selected.
+19:56:02 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+19:56:02 INFO  : 'configparams force-mem-access 1' command is executed.
+19:56:02 INFO  : Context for 'APU' is selected.
+19:56:02 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+19:56:03 INFO  : 'ps7_init' command is executed.
+19:56:03 INFO  : 'ps7_post_config' command is executed.
+19:56:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:56:04 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:56:04 INFO  : 'configparams force-mem-access 0' command is executed.
+19:56:04 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:56:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:56:04 INFO  : 'con' command is executed.
+19:56:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:56:04 INFO  : Disconnected from the channel tcfchan#38.
+19:57:01 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+20:35:33 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+20:36:20 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+20:36:41 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+20:36:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+20:36:41 INFO  : 'jtag frequency' command is executed.
+20:36:41 INFO  : Context for 'APU' is selected.
+20:36:42 INFO  : System reset is completed.
+20:36:45 INFO  : 'after 3000' command is executed.
+20:36:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+20:36:46 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+20:36:46 INFO  : Context for 'APU' is selected.
+20:36:46 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+20:36:46 INFO  : 'configparams force-mem-access 1' command is executed.
+20:36:46 INFO  : Context for 'APU' is selected.
+20:36:46 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+20:36:47 INFO  : 'ps7_init' command is executed.
+20:36:47 INFO  : 'ps7_post_config' command is executed.
+20:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:36:47 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:36:47 INFO  : 'configparams force-mem-access 0' command is executed.
+20:36:47 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:36:47 INFO  : 'con' command is executed.
+20:36:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:36:47 INFO  : Disconnected from the channel tcfchan#42.
+17:03:26 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:03:58 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:03:58 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+----------------End of Script----------------
+
+17:03:58 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:04:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:04:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:04:18 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:07:36 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:07:36 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+----------------End of Script----------------
+
+17:07:36 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:09:54 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:09:54 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+----------------End of Script----------------
+
+17:09:54 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:11:15 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:12:34 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:12:34 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+----------------End of Script----------------
+
+17:12:34 ERROR : Failed to redirect connection to hardware server on host '192.168.1.176' and port '3121'.
+Reason: No route to host
+17:13:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:13:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:13:06 INFO  : 'jtag frequency' command is executed.
+17:13:06 INFO  : Context for 'APU' is selected.
+17:13:06 INFO  : System reset is completed.
+17:13:09 INFO  : 'after 3000' command is executed.
+17:13:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:13:11 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:13:11 INFO  : Context for 'APU' is selected.
+17:13:11 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:13:11 INFO  : 'configparams force-mem-access 1' command is executed.
+17:13:11 INFO  : Context for 'APU' is selected.
+17:13:11 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:13:11 INFO  : 'ps7_init' command is executed.
+17:13:11 INFO  : 'ps7_post_config' command is executed.
+17:13:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:13:11 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:13:11 INFO  : 'configparams force-mem-access 0' command is executed.
+17:13:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:13:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:13:11 INFO  : 'con' command is executed.
+17:13:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:13:11 INFO  : Disconnected from the channel tcfchan#45.
+15:56:49 INFO  : Result from executing command 'getProjects': system_wrapper
+15:56:49 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+15:56:52 INFO  : Checking for BSP changes to sync application flags for project 'fp_sqrt'...
+15:58:03 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+15:58:19 INFO  : Result from executing command 'getProjects': system_wrapper
+15:58:19 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+15:58:35 INFO  : Checking for BSP changes to sync application flags for project 'fp_sqrt'...
+15:58:37 INFO  : The hardware specfication used by project 'fp_sqrt' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+15:58:37 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit' stored in project is removed.
+15:58:37 INFO  : The updated bitstream files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream' in project 'fp_sqrt'.
+15:58:37 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' stored in project is removed.
+15:58:42 INFO  : The updated ps init files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit' in project 'fp_sqrt'.
+15:58:54 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+15:58:55 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+15:58:55 INFO  : 'jtag frequency' command is executed.
+15:58:55 INFO  : Context for 'APU' is selected.
+15:58:55 INFO  : System reset is completed.
+15:58:58 INFO  : 'after 3000' command is executed.
+15:58:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+15:58:59 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit"
+15:58:59 INFO  : Context for 'APU' is selected.
+15:58:59 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+15:58:59 INFO  : 'configparams force-mem-access 1' command is executed.
+15:58:59 INFO  : Context for 'APU' is selected.
+15:58:59 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' is done.
+15:59:00 INFO  : 'ps7_init' command is executed.
+15:59:00 INFO  : 'ps7_post_config' command is executed.
+15:59:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:00 INFO  : The application '/home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:59:01 INFO  : 'configparams force-mem-access 0' command is executed.
+15:59:01 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:59:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:01 INFO  : 'con' command is executed.
+15:59:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:59:01 INFO  : Disconnected from the channel tcfchan#54.
+16:05:58 INFO  : Checking for BSP changes to sync application flags for project 'fp_sqrt'...
+16:06:13 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+16:06:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+16:06:14 INFO  : 'jtag frequency' command is executed.
+16:06:14 INFO  : Context for 'APU' is selected.
+16:06:14 INFO  : System reset is completed.
+16:06:17 INFO  : 'after 3000' command is executed.
+16:06:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+16:06:18 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit"
+16:06:18 INFO  : Context for 'APU' is selected.
+16:06:18 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:06:18 INFO  : 'configparams force-mem-access 1' command is executed.
+16:06:18 INFO  : Context for 'APU' is selected.
+16:06:18 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' is done.
+16:06:19 INFO  : 'ps7_init' command is executed.
+16:06:19 INFO  : 'ps7_post_config' command is executed.
+16:06:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:06:19 INFO  : The application '/home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:06:19 INFO  : 'configparams force-mem-access 0' command is executed.
+16:06:19 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:06:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:06:19 INFO  : 'con' command is executed.
+16:06:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:06:19 INFO  : Disconnected from the channel tcfchan#56.
+16:09:52 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+16:10:10 INFO  : Result from executing command 'getProjects': system_wrapper
+16:10:10 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+16:10:34 INFO  : Connected to target on host '192.168.1.176' and port '3121'.
+16:10:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+16:10:36 INFO  : Device configured successfully with "/home/nick/ECEC402/homework_4/sqrt_acc/sqrt_acc.runs/impl_1/system_wrapper.bit"
+16:10:41 INFO  : Checking for BSP changes to sync application flags for project 'fp_sqrt'...
+16:10:42 INFO  : The hardware specfication used by project 'fp_sqrt' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+16:10:42 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit' stored in project is removed.
+16:10:42 INFO  : The updated bitstream files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream' in project 'fp_sqrt'.
+16:10:42 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' stored in project is removed.
+16:10:47 INFO  : The updated ps init files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit' in project 'fp_sqrt'.
+16:11:02 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+16:11:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+16:11:02 INFO  : 'jtag frequency' command is executed.
+16:11:02 INFO  : Context for 'APU' is selected.
+16:11:02 INFO  : System reset is completed.
+16:11:05 INFO  : 'after 3000' command is executed.
+16:11:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+16:11:07 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit"
+16:11:07 INFO  : Context for 'APU' is selected.
+16:11:07 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:11:07 INFO  : 'configparams force-mem-access 1' command is executed.
+16:11:07 INFO  : Context for 'APU' is selected.
+16:11:07 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' is done.
+16:11:08 INFO  : 'ps7_init' command is executed.
+16:11:08 INFO  : 'ps7_post_config' command is executed.
+16:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:08 INFO  : The application '/home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:11:08 INFO  : 'configparams force-mem-access 0' command is executed.
+16:11:08 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:08 INFO  : 'con' command is executed.
+16:11:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:11:08 INFO  : Disconnected from the channel tcfchan#60.
+16:34:53 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+16:35:00 INFO  : Result from executing command 'getProjects': system_wrapper
+16:35:00 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+16:35:17 INFO  : Checking for BSP changes to sync application flags for project 'fp_sqrt'...
+16:35:19 INFO  : The hardware specfication used by project 'fp_sqrt' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+16:35:19 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit' stored in project is removed.
+16:35:19 INFO  : The updated bitstream files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream' in project 'fp_sqrt'.
+16:35:19 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' stored in project is removed.
+16:35:25 INFO  : The updated ps init files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit' in project 'fp_sqrt'.
+16:48:00 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+16:48:08 INFO  : Result from executing command 'getProjects': system_wrapper
+16:48:08 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+16:48:45 INFO  : Connected to target on host '192.168.1.176' and port '3121'.
+16:48:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+16:48:47 INFO  : Device configured successfully with "/home/nick/ECEC402/homework_4/sqrt_acc/sqrt_acc.runs/impl_1/system_wrapper.bit"
+16:48:53 INFO  : Checking for BSP changes to sync application flags for project 'fp_sqrt'...
+16:49:06 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+16:49:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+16:49:06 INFO  : 'jtag frequency' command is executed.
+16:49:06 INFO  : Context for 'APU' is selected.
+16:49:06 INFO  : System reset is completed.
+16:49:09 INFO  : 'after 3000' command is executed.
+16:49:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+16:49:11 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit"
+16:49:11 INFO  : Context for 'APU' is selected.
+16:49:11 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+16:49:11 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:11 INFO  : Context for 'APU' is selected.
+16:49:11 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' is done.
+16:49:12 INFO  : 'ps7_init' command is executed.
+16:49:12 INFO  : 'ps7_post_config' command is executed.
+16:49:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:12 INFO  : The application '/home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:12 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:12 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:12 INFO  : 'con' command is executed.
+16:49:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:49:12 INFO  : Disconnected from the channel tcfchan#66.
+17:19:07 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+17:19:14 INFO  : Result from executing command 'getProjects': system_wrapper
+17:19:14 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+17:19:52 INFO  : Connected to target on host '192.168.1.176' and port '3121'.
+17:19:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:19:54 INFO  : Device configured successfully with "/home/nick/ECEC402/homework_4/sqrt_acc/sqrt_acc.runs/impl_1/system_wrapper.bit"
+17:20:05 INFO  : Checking for BSP changes to sync application flags for project 'fp_sqrt'...
+17:20:06 INFO  : The hardware specfication used by project 'fp_sqrt' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+17:20:06 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit' stored in project is removed.
+17:20:06 INFO  : The updated bitstream files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream' in project 'fp_sqrt'.
+17:20:06 INFO  : The file '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' stored in project is removed.
+17:20:11 INFO  : The updated ps init files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit' in project 'fp_sqrt'.
+17:20:25 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:20:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:20:25 INFO  : 'jtag frequency' command is executed.
+17:20:25 INFO  : Context for 'APU' is selected.
+17:20:25 INFO  : System reset is completed.
+17:20:28 INFO  : 'after 3000' command is executed.
+17:20:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:20:29 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit"
+17:20:29 INFO  : Context for 'APU' is selected.
+17:20:29 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:20:29 INFO  : 'configparams force-mem-access 1' command is executed.
+17:20:29 INFO  : Context for 'APU' is selected.
+17:20:29 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl' is done.
+17:20:30 INFO  : 'ps7_init' command is executed.
+17:20:30 INFO  : 'ps7_post_config' command is executed.
+17:20:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:20:31 INFO  : The application '/home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:20:31 INFO  : 'configparams force-mem-access 0' command is executed.
+17:20:31 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_sqrt/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_sqrt/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_sqrt/Debug/fp_sqrt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:20:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:20:31 INFO  : 'con' command is executed.
+17:20:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:20:31 INFO  : Disconnected from the channel tcfchan#70.
+17:25:30 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+17:25:43 INFO  : Result from executing command 'getProjects': system_wrapper
+17:25:43 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+17:25:51 INFO  : The hardware specfication used by project 'fp_acc' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+17:25:51 INFO  : The file '/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit' stored in project is removed.
+17:25:51 INFO  : The updated bitstream files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream' in project 'fp_acc'.
+17:25:53 INFO  : The file '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' stored in project is removed.
+17:25:58 INFO  : The updated ps init files are copied from platform to folder '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit' in project 'fp_acc'.
+17:26:16 INFO  : Connected to target on host '192.168.1.176' and port '3121'.
+17:26:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:26:17 INFO  : Device configured successfully with "/home/nick/ECEC402/homework_4/fp_acc/fp_acc.runs/impl_1/system_wrapper.bit"
+17:26:25 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:26:39 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:26:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:26:39 INFO  : 'jtag frequency' command is executed.
+17:26:39 INFO  : Context for 'APU' is selected.
+17:26:40 INFO  : System reset is completed.
+17:26:43 INFO  : 'after 3000' command is executed.
+17:26:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:26:44 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:26:44 INFO  : Context for 'APU' is selected.
+17:26:44 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:26:44 INFO  : 'configparams force-mem-access 1' command is executed.
+17:26:44 INFO  : Context for 'APU' is selected.
+17:26:44 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:26:45 INFO  : 'ps7_init' command is executed.
+17:26:45 INFO  : 'ps7_post_config' command is executed.
+17:26:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:45 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:26:45 INFO  : 'configparams force-mem-access 0' command is executed.
+17:26:45 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:26:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:45 INFO  : 'con' command is executed.
+17:26:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:26:45 INFO  : Disconnected from the channel tcfchan#75.
+17:27:16 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:30:27 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:31:02 INFO  : Result from executing command 'getProjects': system_wrapper
+17:31:02 INFO  : Result from executing command 'getPlatforms': system_wrapper|/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+17:31:05 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:31:24 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:31:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:31:25 INFO  : 'jtag frequency' command is executed.
+17:31:25 INFO  : Context for 'APU' is selected.
+17:31:25 INFO  : System reset is completed.
+17:31:28 INFO  : 'after 3000' command is executed.
+17:31:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:31:29 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:31:29 INFO  : Context for 'APU' is selected.
+17:31:29 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:31:29 INFO  : 'configparams force-mem-access 1' command is executed.
+17:31:29 INFO  : Context for 'APU' is selected.
+17:31:29 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:31:30 INFO  : 'ps7_init' command is executed.
+17:31:30 INFO  : 'ps7_post_config' command is executed.
+17:31:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:30 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:31:30 INFO  : 'configparams force-mem-access 0' command is executed.
+17:31:30 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:31:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:31 INFO  : 'con' command is executed.
+17:31:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:31:31 INFO  : Disconnected from the channel tcfchan#81.
+17:32:40 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:32:49 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:32:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:32:49 INFO  : 'jtag frequency' command is executed.
+17:32:49 INFO  : Context for 'APU' is selected.
+17:32:49 INFO  : System reset is completed.
+17:32:52 INFO  : 'after 3000' command is executed.
+17:32:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:32:54 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:32:54 INFO  : Context for 'APU' is selected.
+17:32:54 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:32:54 INFO  : 'configparams force-mem-access 1' command is executed.
+17:32:54 INFO  : Context for 'APU' is selected.
+17:32:54 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:32:55 INFO  : 'ps7_init' command is executed.
+17:32:55 INFO  : 'ps7_post_config' command is executed.
+17:32:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:32:55 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:32:55 INFO  : 'configparams force-mem-access 0' command is executed.
+17:32:55 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:32:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:32:56 INFO  : 'con' command is executed.
+17:32:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:32:56 INFO  : Disconnected from the channel tcfchan#83.
+17:34:30 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:34:46 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:34:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:34:46 INFO  : 'jtag frequency' command is executed.
+17:34:46 INFO  : Context for 'APU' is selected.
+17:34:46 INFO  : System reset is completed.
+17:34:49 INFO  : 'after 3000' command is executed.
+17:34:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:34:50 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:34:50 INFO  : Context for 'APU' is selected.
+17:34:50 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:34:50 INFO  : 'configparams force-mem-access 1' command is executed.
+17:34:51 INFO  : Context for 'APU' is selected.
+17:34:51 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:34:52 INFO  : 'ps7_init' command is executed.
+17:34:52 INFO  : 'ps7_post_config' command is executed.
+17:34:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:34:52 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:34:52 INFO  : 'configparams force-mem-access 0' command is executed.
+17:34:52 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:34:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:34:52 INFO  : 'con' command is executed.
+17:34:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:34:52 INFO  : Disconnected from the channel tcfchan#85.
+17:46:47 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:47:01 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:47:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:47:01 INFO  : 'jtag frequency' command is executed.
+17:47:01 INFO  : Context for 'APU' is selected.
+17:47:01 INFO  : System reset is completed.
+17:47:04 INFO  : 'after 3000' command is executed.
+17:47:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:47:06 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:47:06 INFO  : Context for 'APU' is selected.
+17:47:06 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:47:06 INFO  : 'configparams force-mem-access 1' command is executed.
+17:47:06 INFO  : Context for 'APU' is selected.
+17:47:06 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:47:07 INFO  : 'ps7_init' command is executed.
+17:47:07 INFO  : 'ps7_post_config' command is executed.
+17:47:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:47:07 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:47:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:47:07 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:47:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:47:07 INFO  : 'con' command is executed.
+17:47:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:47:07 INFO  : Disconnected from the channel tcfchan#87.
+17:47:27 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:47:53 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:47:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:47:54 INFO  : 'jtag frequency' command is executed.
+17:47:54 INFO  : Context for 'APU' is selected.
+17:47:54 INFO  : System reset is completed.
+17:47:57 INFO  : 'after 3000' command is executed.
+17:47:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:47:58 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:47:58 INFO  : Context for 'APU' is selected.
+17:47:58 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:47:58 INFO  : 'configparams force-mem-access 1' command is executed.
+17:47:58 INFO  : Context for 'APU' is selected.
+17:47:58 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:47:59 INFO  : 'ps7_init' command is executed.
+17:47:59 INFO  : 'ps7_post_config' command is executed.
+17:47:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:48:00 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:48:00 INFO  : 'configparams force-mem-access 0' command is executed.
+17:48:00 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:48:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:48:00 INFO  : 'con' command is executed.
+17:48:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:48:00 INFO  : Disconnected from the channel tcfchan#89.
+17:48:37 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:49:13 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:50:16 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:50:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:50:16 INFO  : 'jtag frequency' command is executed.
+17:50:16 INFO  : Context for 'APU' is selected.
+17:50:16 INFO  : System reset is completed.
+17:50:19 INFO  : 'after 3000' command is executed.
+17:50:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:50:20 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:50:20 INFO  : Context for 'APU' is selected.
+17:50:20 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:50:20 INFO  : 'configparams force-mem-access 1' command is executed.
+17:50:20 INFO  : Context for 'APU' is selected.
+17:50:20 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:50:21 INFO  : 'ps7_init' command is executed.
+17:50:21 INFO  : 'ps7_post_config' command is executed.
+17:50:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:50:22 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:50:22 INFO  : 'configparams force-mem-access 0' command is executed.
+17:50:22 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:50:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:50:22 INFO  : 'con' command is executed.
+17:50:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:50:22 INFO  : Disconnected from the channel tcfchan#92.
+17:52:15 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+17:52:33 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+17:52:33 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+17:52:33 INFO  : 'jtag frequency' command is executed.
+17:52:33 INFO  : Context for 'APU' is selected.
+17:52:33 INFO  : System reset is completed.
+17:52:36 INFO  : 'after 3000' command is executed.
+17:52:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+17:52:37 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+17:52:38 INFO  : Context for 'APU' is selected.
+17:52:38 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+17:52:38 INFO  : 'configparams force-mem-access 1' command is executed.
+17:52:38 INFO  : Context for 'APU' is selected.
+17:52:38 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+17:52:39 INFO  : 'ps7_init' command is executed.
+17:52:39 INFO  : 'ps7_post_config' command is executed.
+17:52:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:52:39 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:52:39 INFO  : 'configparams force-mem-access 0' command is executed.
+17:52:39 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:52:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:52:39 INFO  : 'con' command is executed.
+17:52:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:52:39 INFO  : Disconnected from the channel tcfchan#94.
+17:57:24 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:01:29 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:01:46 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:01:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:01:46 INFO  : 'jtag frequency' command is executed.
+18:01:46 INFO  : Context for 'APU' is selected.
+18:01:46 INFO  : System reset is completed.
+18:01:49 INFO  : 'after 3000' command is executed.
+18:01:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:01:51 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:01:51 INFO  : Context for 'APU' is selected.
+18:01:51 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:01:51 INFO  : 'configparams force-mem-access 1' command is executed.
+18:01:51 INFO  : Context for 'APU' is selected.
+18:01:51 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:01:52 INFO  : 'ps7_init' command is executed.
+18:01:52 INFO  : 'ps7_post_config' command is executed.
+18:01:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:01:52 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:01:52 INFO  : 'configparams force-mem-access 0' command is executed.
+18:01:52 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:01:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:01:52 INFO  : 'con' command is executed.
+18:01:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:01:52 INFO  : Disconnected from the channel tcfchan#97.
+18:05:50 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:06:04 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:06:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:06:04 INFO  : 'jtag frequency' command is executed.
+18:06:04 INFO  : Context for 'APU' is selected.
+18:06:04 INFO  : System reset is completed.
+18:06:07 INFO  : 'after 3000' command is executed.
+18:06:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:06:09 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:06:09 INFO  : Context for 'APU' is selected.
+18:06:09 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:06:09 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:09 INFO  : Context for 'APU' is selected.
+18:06:09 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:06:10 INFO  : 'ps7_init' command is executed.
+18:06:10 INFO  : 'ps7_post_config' command is executed.
+18:06:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:10 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:06:10 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:10 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:06:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:10 INFO  : 'con' command is executed.
+18:06:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:06:10 INFO  : Disconnected from the channel tcfchan#99.
+18:07:04 INFO  : Checking for BSP changes to sync application flags for project 'fp_acc'...
+18:07:20 INFO  : Connected through redirection to target on host '192.168.1.176' and port '3121'.
+18:07:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB7358A' is selected.
+18:07:20 INFO  : 'jtag frequency' command is executed.
+18:07:20 INFO  : Context for 'APU' is selected.
+18:07:20 INFO  : System reset is completed.
+18:07:23 INFO  : 'after 3000' command is executed.
+18:07:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}' command is executed.
+18:07:24 INFO  : Device configured successfully with "/home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit"
+18:07:24 INFO  : Context for 'APU' is selected.
+18:07:24 INFO  : Hardware design and registers information is loaded from '/home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+18:07:24 INFO  : 'configparams force-mem-access 1' command is executed.
+18:07:24 INFO  : Context for 'APU' is selected.
+18:07:24 INFO  : Sourcing of '/home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl' is done.
+18:07:25 INFO  : 'ps7_init' command is executed.
+18:07:25 INFO  : 'ps7_post_config' command is executed.
+18:07:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:26 INFO  : The application '/home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:07:26 INFO  : 'configparams force-mem-access 0' command is executed.
+18:07:26 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:192.168.1.176:3121]
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB7358A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB7358A-13722093-0"}
+fpga -file /home/nick/ECEC402/workspace/fp_acc/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/nick/ECEC402/workspace/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/nick/ECEC402/workspace/fp_acc/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/nick/ECEC402/workspace/fp_acc/Debug/fp_acc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:07:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:26 INFO  : 'con' command is executed.
+18:07:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:07:26 INFO  : Disconnected from the channel tcfchan#101.
+18:13:39 INFO  : Launching XSCT server: xsct -n  -interactive /home/nick/ECEC402/workspace/temp_xsdb_launch_script.tcl
+18:13:42 INFO  : XSCT server has started successfully.
+18:13:42 INFO  : plnx-install-location is set to ''
+18:13:42 INFO  : Successfully done setting XSCT server connection channel  
+18:13:42 INFO  : Successfully done setting workspace for the tool. 
+18:13:47 INFO  : Platform repository initialization has completed.
+18:13:48 INFO  : Registering command handlers for Vitis TCF services
+18:14:02 INFO  : Successfully done query RDI_DATADIR 

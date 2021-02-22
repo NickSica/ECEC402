@@ -1,0 +1,8 @@
+18:16:42 **** Clean-only build of configuration Debug for project fp_acc_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+18:16:42 Build Finished (took 177ms)
+

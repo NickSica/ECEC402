@@ -7,7 +7,7 @@
 	<item key="TestApp_system-device" value="Auto Detect"/>
 	<item key="TestApp_system-partial_bit" value="false"/>
 	<item key="TestApp_system-skip_rev_check" value="false"/>
-	<item key="programfpga.sdxproject" value="led_blink_system"/>
+	<item key="programfpga.sdxproject" value="fp_acc_system"/>
 	<item key="devices_info_nick-desktop" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351AB7358A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351AB7358A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351AB7358A-13722093-0&quot;}}]}"/>
 	<item key="knight_rider_system-bitFile" value="/home/nick/ECEC402/homework_2/led_drv_tb/led_drv_tb.runs/impl_1/system_wrapper.bit"/>
 	<item key="knight_rider_system-bmmFile" value=""/>
@@ -15,10 +15,16 @@
 	<item key="knight_rider_system-device" value="Auto Detect"/>
 	<item key="knight_rider_system-partial_bit" value="false"/>
 	<item key="knight_rider_system-skip_rev_check" value="false"/>
-	<item key="led_blink_system-bitFile" value="/home/nick/ECEC402/homework_3/led_blink/led_blink.runs/impl_1/system_wrapper.bit"/>
+	<item key="led_blink_system-bitFile" value="/home/nick/ECEC402/homework_4/fp_acc/fp_acc.runs/impl_1/system_wrapper.bit"/>
 	<item key="led_blink_system-bmmFile" value=""/>
 	<item key="led_blink_system-target" value="nick-desktop"/>
 	<item key="led_blink_system-device" value="Auto Detect"/>
 	<item key="led_blink_system-partial_bit" value="false"/>
 	<item key="led_blink_system-skip_rev_check" value="false"/>
+	<item key="fp_acc_system-bitFile" value="/home/nick/ECEC402/homework_4/fp_acc/fp_acc.runs/impl_1/system_wrapper.bit"/>
+	<item key="fp_acc_system-bmmFile" value=""/>
+	<item key="fp_acc_system-target" value="nick-desktop"/>
+	<item key="fp_acc_system-device" value="Auto Detect"/>
+	<item key="fp_acc_system-partial_bit" value="false"/>
+	<item key="fp_acc_system-skip_rev_check" value="false"/>
 </section>

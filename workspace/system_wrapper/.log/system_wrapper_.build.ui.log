@@ -1,11 +1,13 @@
-2021-02-15T17:49:27.160461121171255-17:49:27 **** Clean-only build of project system_wrapper ****
-233235237-buildplatform.sh 45327 system_wrapper clean 
-233235237-XSDB Server Channel: tcfchan#9
+2021-02-21T18:16:44.998959121171255-18:16:45 **** Clean-only build of project system_wrapper ****
+233235237-buildplatform.sh 35541 system_wrapper clean 
+233235237-XSDB Server Channel: tcfchan#3
 233235237-Cleaning the zynq_fsbl application.
 233235237-rm -rf  fsbl_hooks.o  image_mover.o  main.o  md5.o  nand.o  nor.o  pcap.o  ps7_init.o  qspi.o  rsa.o  sd.o  fsbl_handoff.o zynq
 233235237-_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
 233235237-
 233235237-Cleaning the zynq_fsbl application, bsp
+233235237-make -C ps7_cortexa9_0/libsrc/axidma_v9_12/src -s clean 
+233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
 233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
@@ -17,8 +19,6 @@
 233235237-make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s clean 
 233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s clean 
-233235237-
-233235237-make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s clean 
 233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s clean 
 233235237-
@@ -41,6 +41,8 @@
 233235237-rm -f ps7_cortexa9_0/lib/libxil.a
 233235237-
 233235237-Cleaning the BSP for domain  - standalone_ps7_cortexa9_0
+233235237-make -C ps7_cortexa9_0/libsrc/axidma_v9_12/src -s clean 
+233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
 233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
@@ -53,7 +55,7 @@
 233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s clean 
 233235237-
-233235237-make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s clean 
+233235237-make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s clean 
 233235237-
 233235237-make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s clean 
 233235237-
@@ -70,5 +72,5 @@
 233235237-rm -f ps7_cortexa9_0/lib/libxil.a
 233235237-
 121171255-
-17:49:32 Build Finished (took 5s.555ms)
+18:16:50 Build Finished (took 5s.364ms)
 

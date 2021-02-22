@@ -1,0 +1,7 @@
+18:16:41 **** Clean-only build of configuration Debug for project fp_acc ****
+make clean 
+rm -rf ./src/helloworld.o ./src/platform.o ./src/helloworld.d ./src/platform.d fp_acc.elf.size  fp_acc.elf
+ 
+
+18:16:42 Build Finished (took 175ms)
+
