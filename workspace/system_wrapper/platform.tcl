@@ -120,3 +120,50 @@ platform generate
 platform clean
 platform clean
 platform clean
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_6/audio_base_system/system_wrapper.xsa}
+platform clean
+platform clean
+platform config -updatehw {/home/nick/ECEC402/homework_6/audio_base_system/system_wrapper.xsa}
+platform clean
+domain active {zynq_fsbl}
+bsp reload
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+domain active {zynq_fsbl}
+bsp reload
+catch {bsp regenerate}
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+catch {bsp regenerate}
+catch {bsp regenerate}
+platform active {system_wrapper}
+platform -make-local
+bsp reload
+catch {bsp regenerate}
+domain active {zynq_fsbl}
+bsp reload
+catch {bsp regenerate}
+platform clean
+platform clean
+domain active {zynq_fsbl}
+bsp reload
+catch {bsp regenerate}
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+catch {bsp regenerate}
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform clean
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_4/fp_acc/system_wrapper.xsa}
+platform generate
+platform config -updatehw {/home/nick/ECEC402/quiz_2/fp_recipr/system_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform clean

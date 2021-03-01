@@ -1,0 +1,7 @@
+16:01:03 **** Clean-only build of configuration Debug for project audio_processing ****
+make clean 
+rm -rf ./src/audio_demo.o ./src/main.o ./src/platform.o ./src/timer_ps.o ./src/audio_demo.d ./src/main.d ./src/platform.d ./src/timer_ps.d audio_processing.elf.size  audio_processing.elf
+ 
+
+16:01:04 Build Finished (took 348ms)
+

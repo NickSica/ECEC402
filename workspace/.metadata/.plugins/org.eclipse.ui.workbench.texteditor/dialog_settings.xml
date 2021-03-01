@@ -5,21 +5,21 @@
 		<item key="DIALOG_Y_ORIGIN" value="413"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Value +="/>
+		<item key="selection" value="CheckData"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
-		<item key="isRegEx" value="false"/>
+		<item key="isRegEx" value="true"/>
 		<list key="findhistory">
-			<item value="Value +="/>
 			<item value="CheckData"/>
+			<item value="RxPcket"/>
 			<item value="SendPacket"/>
-			<item value="Data error"/>
-			<item value="RX INTERRUPT"/>
-			<item value="RxIntr"/>
-			<item value="TxIntr"/>
-			<item value="TX_BUFFER_BASE"/>
+			<item value="Rx"/>
+			<item value="XPAR.*BASEADDR"/>
+			<item value="XPAR_AXI_I2S_ADI"/>
+			<item value="XST"/>
+			<item value="XST_IIC_ARB_LOST"/>
 		</list>
 		<list key="replacehistory">
 			<item value="while("/>

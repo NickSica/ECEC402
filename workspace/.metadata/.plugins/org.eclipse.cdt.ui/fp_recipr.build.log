@@ -1,0 +1,7 @@
+16:17:09 **** Clean-only build of configuration Debug for project fp_recipr ****
+make clean 
+rm -rf ./src/helloworld.o ./src/platform.o ./src/helloworld.d ./src/platform.d fp_recipr.elf.size  fp_recipr.elf
+ 
+
+16:17:09 Build Finished (took 224ms)
+
