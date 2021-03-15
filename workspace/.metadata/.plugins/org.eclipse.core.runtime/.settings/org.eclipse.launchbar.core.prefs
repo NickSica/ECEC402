@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_2,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_3,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_acc-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_sqrt-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_acc-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_audio_processing-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_recipr-GDB
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_2,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-GDB_3,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_acc-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_sqrt-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_acc-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_audio_processing-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_fp_recipr-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_led_blink-Emulation,org.eclipse.launchbar.core.descriptorType.default\:Debugger_led_blink-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_tone_detection-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_final_2-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_final_1-GDB
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_TestApp-Default_1/activeLaunchMode=run
@@ -16,4 +16,5 @@ org.eclipse.launchbar.core.descriptorType.default\:Debugger_led_blink-GDB/active
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_midterm-GDB/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_midterm_problem_1-GDB/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_stopwatch-GDB/activeLaunchMode=embrun
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_tone_detection-GDB/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_TestApp_system/activeLaunchMode=systemrun

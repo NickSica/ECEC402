@@ -1,0 +1,7 @@
+15:48:04 **** Clean-only build of configuration Debug for project tone_detection ****
+make clean 
+rm -rf ./src/audio_demo.o ./src/hamming_fft.o ./src/helloworld.o ./src/platform.o ./src/timer_ps.o ./src/audio_demo.d ./src/hamming_fft.d ./src/helloworld.d ./src/platform.d ./src/timer_ps.d tone_detection.elf.size  tone_detection.elf
+ 
+
+15:48:04 Build Finished (took 329ms)
+

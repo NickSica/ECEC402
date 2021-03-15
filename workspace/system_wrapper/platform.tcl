@@ -167,3 +167,25 @@ platform config -updatehw {/home/nick/ECEC402/quiz_2/fp_recipr/system_wrapper.xs
 platform generate -domains 
 platform clean
 platform clean
+platform generate
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/homework_6/audio_base_system/system_wrapper.xsa}
+platform generate
+platform clean
+platform generate
+platform clean
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/final/question_1/system_wrapper.xsa}
+platform config -updatehw {/home/nick/ECEC402/final/question_1/system_wrapper.xsa}
+platform generate
+platform clean
+platform clean
+platform config -updatehw {/home/nick/ECEC402/final/question_2/system_wrapper.xsa}
+platform generate
+platform clean
+platform active {system_wrapper}
+platform config -updatehw {/home/nick/ECEC402/final/question_1/system_wrapper.xsa}
+platform generate
+platform clean
+platform clean

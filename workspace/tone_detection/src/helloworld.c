@@ -1,0 +1,125 @@
+/******************************************************************************
+*
+* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+
+/*
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "hamming_fft.h"
+#include "audio_demo.h"
+#include "timer_ps.h"
+#include "xparameters.h"
+#include "xuartps.h"
+
+/*
+ * XPAR redefines
+ */
+#define AUDIO_IIC_ID            XPAR_XIICPS_0_DEVICE_ID
+#define AUDIO_CTRL_BASEADDR     XPAR_AXI_I2S_ADI_0_S_AXI_BASEADDR
+#define SCU_TIMER_ID            XPAR_SCUTIMER_DEVICE_ID
+#define UART_BASEADDR           XPAR_PS7_UART_1_BASEADDR
+#define SW_BASEADDR             XPAR_GPIO_0_BASEADDR
+#define BTN_BASEADDR            XPAR_GPIO_1_BASEADDR
+
+void MainDemoPrintMenu()
+{
+    xil_printf("\x1B[H"); //Set cursor to top left of terminal
+    xil_printf("\x1B[2J"); //Clear terminal
+    xil_printf("**************************************************\n\r");
+    xil_printf("**************************************************\n\r");
+    xil_printf("*         ZYBO Base System User Demo             *\n\r");
+    xil_printf("**************************************************\n\r");
+    xil_printf("**************************************************\n\r");
+    xil_printf("\n\r");
+    xil_printf("1 - Audio Demo\n\r");
+    xil_printf("q - Quit\n\r");
+    xil_printf("\n\r");
+    xil_printf("Select a demo to run:");
+}
+
+int main()
+{
+    xil_printf("Start");
+    char userInput = 0;
+
+    AudioInitialize(SCU_TIMER_ID, AUDIO_IIC_ID, AUDIO_CTRL_BASEADDR);
+    TimerInitialize(SCU_TIMER_ID);
+
+    /* Flush UART FIFO */
+    while (XUartPs_IsReceiveData(UART_BASEADDR))
+    {
+        XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+    }
+
+    while (userInput != 'q')
+    {
+        MainDemoPrintMenu();
+
+        /* Wait for data on UART */
+        while (!XUartPs_IsReceiveData(UART_BASEADDR))
+        {}
+
+        /* Store the first character in the UART receive FIFO and echo it */
+        userInput = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+        xil_printf("%c", userInput);
+
+        switch (userInput)
+        {
+        case '1':
+            AudioRunDemo(AUDIO_CTRL_BASEADDR, UART_BASEADDR, SW_BASEADDR, BTN_BASEADDR);
+            break;
+        case 'q':
+            break;
+        default :
+            xil_printf("\n\rInvalid Selection");
+            TimerDelay(500000);
+        }
+    }
+
+    return 0;
+}
+
+

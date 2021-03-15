@@ -1,0 +1,7 @@
+16:29:51 **** Clean-only build of configuration Debug for project final_2 ****
+make clean 
+rm -rf ./src/helloworld.o ./src/platform.o ./src/helloworld.d ./src/platform.d final_2.elf.size  final_2.elf
+ 
+
+16:29:51 Build Finished (took 231ms)
+

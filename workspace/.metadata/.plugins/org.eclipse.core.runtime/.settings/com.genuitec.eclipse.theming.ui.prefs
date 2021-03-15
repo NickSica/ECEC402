@@ -1,12 +1,13 @@
-approved.defs.file.last.changed.time=1607625304000
+approved.defs.file.last.changed.time=1614897334000
 codemix.dont.show.upsell.until=1613771110102
+codetogether.announce.displayed=true
 configurationInstallLocation=/opt/Xilinx/Vitis/2020.2/eclipse/lnx64.o/
 eclipse.preferences.version=1
 elearning.dont.show.until=1614986033498
 iconreplacement=false
 includeThemingInOomph=false
-last.download.attempt.time=1614632427226
-lastConfiguration=1614632423879
+last.download.attempt.time=1615839743541
+lastConfiguration=1615839741033
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray

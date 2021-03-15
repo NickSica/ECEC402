@@ -1,0 +1,30 @@
+/*
+* hamming_fft.h
+*/
+#ifndef HAMMING_FFT_H_
+#define HAMMING_FFT_H_
+#include
+#include
+#include
+#include
+<stdio.h>
+<stdlib.h>
+<math.h>
+<stdint.h>
+// bin number for 1KHz at 24.9
+#define BUFF_LENGTH 128
+#define BIN_NUM 52
+#define LogMagSQ_TH 3
+void
+void
+void
+void
+void
+void
+declare();
+switch_buffers(void);
+swap(int32_t *i1, int32_t *i2);
+doFFT(int32_t* data);
+doHamming(int32_t* data);
+doLogMagSq(int32_t* data);
+#endif /* HAMMING_FFT_H_ */

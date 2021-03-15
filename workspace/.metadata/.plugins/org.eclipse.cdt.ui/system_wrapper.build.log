@@ -1,13 +1,11 @@
-16:17:18 **** Clean-only build of project system_wrapper ****
-buildplatform.sh 41327 system_wrapper clean 
-XSDB Server Channel: tcfchan#11
+16:33:07 **** Clean-only build of project system_wrapper ****
+buildplatform.sh 37627 system_wrapper clean 
+XSDB Server Channel: tcfchan#12
 Cleaning the zynq_fsbl application.
 rm -rf  fsbl_hooks.o  image_mover.o  main.o  md5.o  nand.o  nor.o  pcap.o  ps7_init.o  qspi.o  rsa.o  sd.o  fsbl_handoff.o zynq
 _fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
 
 Cleaning the zynq_fsbl application, bsp
-make -C ps7_cortexa9_0/libsrc/axidma_v9_12/src -s clean 
-
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
 
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
@@ -19,6 +17,8 @@ make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s clean 
 
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s clean 
 
 make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s clean 
 
@@ -41,8 +41,6 @@ make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean
 rm -f ps7_cortexa9_0/lib/libxil.a
 
 Cleaning the BSP for domain  - standalone_ps7_cortexa9_0
-make -C ps7_cortexa9_0/libsrc/axidma_v9_12/src -s clean 
-
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
 
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
@@ -54,6 +52,8 @@ make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s clean 
 
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s clean 
+
+make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s clean 
 
 make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s clean 
 
@@ -76,5 +76,5 @@ make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean
 rm -f ps7_cortexa9_0/lib/libxil.a
 
 
-16:17:23 Build Finished (took 5s.505ms)
+16:33:13 Build Finished (took 5s.489ms)
 

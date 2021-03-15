@@ -64,7 +64,7 @@
 #define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
 #define INTC_TMR_INTERRUPT_ID  XPAR_SCUTIMER_INTR
 
-#define BTN_INT                XGPIO_IR_CH1_MASK
+#define SWS_INT                XGPIO_IR_CH1_MASK
 #define TMR_LOAD               0xFF000000
 #define TMR_FREQ               XPAR_PS7_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2
 
@@ -131,10 +131,10 @@ int main(void)
 void BTN_Intr_Handler(void *InstancePtr)
 {
 	// Disable GPIO interrupts
-	XGpio_InterruptDisable(&BTNInst, BTN_INT);
+	XGpio_InterruptDisable(&BTNInst, SWS_INT);
 
 	// Ignore additional button presses
-	if((XGpio_InterruptGetStatus(&BTNInst) & BTN_INT) != BTN_INT) return;
+	if((XGpio_InterruptGetStatus(&BTNInst) & SWS_INT) != SWS_INT) return;
 	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
 	if(btn_value == 1)
 		btn_data ^= 0b0001;
@@ -145,10 +145,10 @@ void BTN_Intr_Handler(void *InstancePtr)
 	else if(btn_value == 8)
 		btn_data ^= 0b1000;
 
-	(void)XGpio_InterruptClear(&BTNInst, BTN_INT);
+	(void)XGpio_InterruptClear(&BTNInst, SWS_INT);
 
 	// Enable GPIO interrupts
-	XGpio_InterruptEnable(&BTNInst, BTN_INT);
+	XGpio_InterruptEnable(&BTNInst, SWS_INT);
 }
 
 void TMR_Intr_Handler(void *CallBackRef)

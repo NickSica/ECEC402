@@ -554,3 +554,150 @@ timestamp=[2021-03-01 16:17:09], mode=PLATFORM_GENERATION, duration=0:00:05.685,
 timestamp=[2021-03-01 16:17:09], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=fp_recipr, configuration=Debug, clean_build=true}
 timestamp=[2021-03-01 16:17:09], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=fp_recipr_system, configuration=Debug, clean_build=true}
 timestamp=[2021-03-01 16:17:23], mode=PLATFORM_GENERATION, duration=0:00:05.518, duration_ms=5518, data={name=system_wrapper}
+timestamp=[2021-03-12 14:44:04], mode=WORKBENCH_START, duration=0:00:09.192, duration_ms=9192, data={}
+timestamp=[2021-03-12 14:44:07], mode=WORKBENCH_UI_INIT, duration=0:00:02.840, duration_ms=2840, data={editors_count=9, platform_editors_count=1, projects_count=24, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TestApp,TestApp_system,audio_processing,audio_processing_system,fp_acc,fp_acc_system,fp_recipr,fp_recipr_system,fp_sqrt,fp_sqrt_system,knight_rider,knight_rider_system,led_blink,led_blink_system,midterm,midterm_problem_1,midterm_problem_1_system,midterm_problem_2,midterm_problem_2_system,midterm_system,stopwatch,stopwatch_system,system_wrapper}
+timestamp=[2021-03-12 14:44:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:05.791, duration_ms=5791, data={}
+timestamp=[2021-03-12 15:00:16], mode=PLATFORM_GENERATION, duration=0:00:15.681, duration_ms=15681, data={name=system_wrapper}
+timestamp=[2021-03-12 15:01:18], mode=APP_CREATION, duration=0:00:05.531, duration_ms=5531, data={name=tone_detection, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2021-03-12 16:17:11], mode=BUILD, duration=0:00:00.246, duration_ms=246, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:17:17], mode=BUILD, duration=0:00:05.521, duration_ms=5521, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:18:05], mode=BUILD, duration=0:00:00.286, duration_ms=286, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:18:11], mode=BUILD, duration=0:00:05.465, duration_ms=5465, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:18:32], mode=BUILD, duration=0:00:00.285, duration_ms=285, data={name=audio_processing, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:18:43], mode=BUILD, duration=0:00:05.556, duration_ms=5556, data={name=audio_processing_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:18:50], mode=BUILD, duration=0:00:00.275, duration_ms=275, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:18:56], mode=BUILD, duration=0:00:05.400, duration_ms=5400, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:19:14], mode=BUILD, duration=0:00:00.286, duration_ms=286, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:19:20], mode=BUILD, duration=0:00:05.344, duration_ms=5344, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:20:54], mode=PLATFORM_GENERATION, duration=0:00:09.529, duration_ms=9529, data={name=system_wrapper}
+timestamp=[2021-03-12 16:22:07], mode=PLATFORM_GENERATION, duration=0:00:14.005, duration_ms=14005, data={name=system_wrapper}
+timestamp=[2021-03-12 16:22:08], mode=BUILD, duration=0:00:00.285, duration_ms=285, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:22:29], mode=PLATFORM_GENERATION, duration=0:00:06.784, duration_ms=6784, data={name=system_wrapper}
+timestamp=[2021-03-12 16:24:41], mode=PLATFORM_GENERATION, duration=0:00:08.450, duration_ms=8450, data={name=system_wrapper}
+timestamp=[2021-03-12 16:24:50], mode=BUILD, duration=0:00:00.282, duration_ms=282, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:25:00], mode=BUILD, duration=0:00:05.405, duration_ms=5405, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:25:14], mode=BUILD, duration=0:00:00.281, duration_ms=281, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:25:20], mode=BUILD, duration=0:00:05.391, duration_ms=5391, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:26:35], mode=BUILD, duration=0:00:00.292, duration_ms=292, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:26:41], mode=BUILD, duration=0:00:05.405, duration_ms=5405, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:27:17], mode=PLATFORM_GENERATION, duration=0:00:05.615, duration_ms=5615, data={name=system_wrapper}
+timestamp=[2021-03-12 16:27:18], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=audio_processing, configuration=Debug, clean_build=true}
+timestamp=[2021-03-12 16:27:18], mode=BUILD, duration=0:00:00.200, duration_ms=200, data={name=audio_processing_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-12 16:28:34], mode=PLATFORM_GENERATION, duration=0:00:12.993, duration_ms=12993, data={name=system_wrapper}
+timestamp=[2021-03-12 16:28:35], mode=BUILD, duration=0:00:00.342, duration_ms=342, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:28:42], mode=BUILD, duration=0:00:05.469, duration_ms=5469, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:29:09], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:29:15], mode=BUILD, duration=0:00:05.391, duration_ms=5391, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:29:40], mode=BUILD, duration=0:00:00.427, duration_ms=427, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:29:46], mode=BUILD, duration=0:00:05.350, duration_ms=5350, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:30:39], mode=BUILD, duration=0:00:00.339, duration_ms=339, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:30:45], mode=BUILD, duration=0:00:05.480, duration_ms=5480, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:31:10], mode=BUILD, duration=0:00:00.397, duration_ms=397, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:31:16], mode=BUILD, duration=0:00:05.446, duration_ms=5446, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:33:02], mode=BUILD, duration=0:00:00.394, duration_ms=394, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:33:08], mode=BUILD, duration=0:00:05.455, duration_ms=5455, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:35:50], mode=BUILD, duration=0:00:00.374, duration_ms=374, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:35:56], mode=BUILD, duration=0:00:05.460, duration_ms=5460, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:36:48], mode=BUILD, duration=0:00:00.526, duration_ms=526, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:36:54], mode=BUILD, duration=0:00:05.519, duration_ms=5519, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:38:38], mode=BUILD, duration=0:00:00.246, duration_ms=246, data={name=tone_detection, configuration=Debug, clean_build=true}
+timestamp=[2021-03-12 16:38:38], mode=BUILD, duration=0:00:00.740, duration_ms=740, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:38:46], mode=BUILD, duration=0:00:06.809, duration_ms=6809, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:46:32], mode=BUILD, duration=0:00:00.298, duration_ms=298, data={name=led_blink, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:46:33], mode=BUILD, duration=0:00:00.285, duration_ms=285, data={name=fp_acc, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:46:34], mode=BUILD, duration=0:00:00.590, duration_ms=590, data={name=audio_processing, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:46:35], mode=BUILD, duration=0:00:00.287, duration_ms=287, data={name=fp_sqrt, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:46:35], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=fp_recipr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:46:36], mode=BUILD, duration=0:00:00.288, duration_ms=288, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:46:44], mode=BUILD, duration=0:00:06.730, duration_ms=6730, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:03], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=led_blink, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:04], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=fp_sqrt, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:04], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=fp_recipr, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:05], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=fp_acc, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:06], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=audio_processing, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:07], mode=BUILD, duration=0:00:00.395, duration_ms=395, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:14], mode=BUILD, duration=0:00:06.709, duration_ms=6709, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:24], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:31], mode=BUILD, duration=0:00:06.761, duration_ms=6761, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:50], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:49:57], mode=BUILD, duration=0:00:06.702, duration_ms=6702, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:51:48], mode=BUILD, duration=0:00:00.394, duration_ms=394, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:51:55], mode=BUILD, duration=0:00:06.708, duration_ms=6708, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:55:32], mode=BUILD, duration=0:00:00.478, duration_ms=478, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:55:39], mode=BUILD, duration=0:00:06.721, duration_ms=6721, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:57:47], mode=BUILD, duration=0:00:00.280, duration_ms=280, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:57:55], mode=BUILD, duration=0:00:06.723, duration_ms=6723, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:58:23], mode=BUILD, duration=0:00:00.384, duration_ms=384, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:58:31], mode=BUILD, duration=0:00:06.757, duration_ms=6757, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:59:07], mode=BUILD, duration=0:00:00.426, duration_ms=426, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 16:59:14], mode=BUILD, duration=0:00:06.715, duration_ms=6715, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:00:32], mode=BUILD, duration=0:00:00.448, duration_ms=448, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:00:40], mode=BUILD, duration=0:00:06.673, duration_ms=6673, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:01:49], mode=BUILD, duration=0:00:00.389, duration_ms=389, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:01:56], mode=BUILD, duration=0:00:06.679, duration_ms=6679, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:12:05], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:12:12], mode=BUILD, duration=0:00:06.657, duration_ms=6657, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:13:24], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:13:31], mode=BUILD, duration=0:00:06.713, duration_ms=6713, data={name=tone_detection_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-12 17:13:39], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=tone_detection, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 15:47:24], mode=WORKBENCH_START, duration=0:00:17.171, duration_ms=17171, data={}
+timestamp=[2021-03-15 15:47:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.105, duration_ms=105, data={}
+timestamp=[2021-03-15 15:47:27], mode=WORKBENCH_UI_INIT, duration=0:00:03.570, duration_ms=3570, data={editors_count=5, platform_editors_count=0, projects_count=26, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TestApp,TestApp_system,audio_processing,audio_processing_system,fp_acc,fp_acc_system,fp_recipr,fp_recipr_system,fp_sqrt,fp_sqrt_system,knight_rider,knight_rider_system,led_blink,led_blink_system,midterm,midterm_problem_1,midterm_problem_1_system,midterm_problem_2,midterm_problem_2_system,midterm_system,stopwatch,stopwatch_system,system_wrapper,tone_detection,tone_detection_system}
+timestamp=[2021-03-15 15:47:56], mode=PLATFORM_GENERATION, duration=0:00:14.033, duration_ms=14033, data={name=system_wrapper}
+timestamp=[2021-03-15 15:47:57], mode=BUILD, duration=0:00:00.332, duration_ms=332, data={name=tone_detection, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 15:47:57], mode=BUILD, duration=0:00:00.254, duration_ms=254, data={name=tone_detection_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 15:48:04], mode=PLATFORM_GENERATION, duration=0:00:06.448, duration_ms=6448, data={name=system_wrapper}
+timestamp=[2021-03-15 15:48:04], mode=BUILD, duration=0:00:00.336, duration_ms=336, data={name=tone_detection, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 15:48:04], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=tone_detection_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 15:49:19], mode=PLATFORM_GENERATION, duration=0:00:18.482, duration_ms=18482, data={name=system_wrapper}
+timestamp=[2021-03-15 15:50:35], mode=APP_CREATION, duration=0:00:05.239, duration_ms=5239, data={name=final_1, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2021-03-15 16:02:52], mode=BUILD, duration=0:00:00.305, duration_ms=305, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:02:58], mode=BUILD, duration=0:00:05.565, duration_ms=5565, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:06:07], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:06:13], mode=BUILD, duration=0:00:05.621, duration_ms=5621, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:06:19], mode=BUILD, duration=0:00:00.279, duration_ms=279, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:06:25], mode=BUILD, duration=0:00:05.572, duration_ms=5572, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:06:43], mode=BUILD, duration=0:00:00.277, duration_ms=277, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:06:49], mode=BUILD, duration=0:00:05.487, duration_ms=5487, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:09:11], mode=BUILD, duration=0:00:00.252, duration_ms=252, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:09:17], mode=BUILD, duration=0:00:05.571, duration_ms=5571, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:09:25], mode=BUILD, duration=0:00:00.475, duration_ms=475, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:09:32], mode=BUILD, duration=0:00:06.867, duration_ms=6867, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:10:59], mode=BUILD, duration=0:00:00.401, duration_ms=401, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:11:07], mode=BUILD, duration=0:00:06.822, duration_ms=6822, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:11:48], mode=BUILD, duration=0:00:00.428, duration_ms=428, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:11:55], mode=BUILD, duration=0:00:06.769, duration_ms=6769, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:15:18], mode=BUILD, duration=0:00:00.438, duration_ms=438, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:15:26], mode=BUILD, duration=0:00:06.788, duration_ms=6788, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:19:41], mode=PLATFORM_GENERATION, duration=0:00:05.789, duration_ms=5789, data={name=system_wrapper}
+timestamp=[2021-03-15 16:19:41], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=final_1, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:19:41], mode=BUILD, duration=0:00:00.192, duration_ms=192, data={name=final_1_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:19:51], mode=PLATFORM_GENERATION, duration=0:00:05.611, duration_ms=5611, data={name=system_wrapper}
+timestamp=[2021-03-15 16:19:51], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=final_1, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:19:51], mode=BUILD, duration=0:00:00.226, duration_ms=226, data={name=final_1_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:20:34], mode=PLATFORM_GENERATION, duration=0:00:16.889, duration_ms=16889, data={name=system_wrapper}
+timestamp=[2021-03-15 16:21:00], mode=APP_CREATION, duration=0:00:00.653, duration_ms=653, data={name=final_2, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2021-03-15 16:21:27], mode=APP_CREATION, duration=0:00:00.051, duration_ms=51, data={name=final_2, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2021-03-15 16:22:04], mode=APP_CREATION, duration=0:00:00.596, duration_ms=596, data={name=final_problem_2, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2021-03-15 16:22:32], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:03.589, duration_ms=3589, data={}
+timestamp=[2021-03-15 16:22:34], mode=WORKBENCH_START, duration=0:00:12.576, duration_ms=12576, data={}
+timestamp=[2021-03-15 16:22:35], mode=WORKBENCH_UI_INIT, duration=0:00:00.746, duration_ms=746, data={editors_count=1, platform_editors_count=0, projects_count=28, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,TestApp,TestApp_system,audio_processing,audio_processing_system,final_1,final_1_system,fp_acc,fp_acc_system,fp_recipr,fp_recipr_system,fp_sqrt,fp_sqrt_system,knight_rider,knight_rider_system,led_blink,led_blink_system,midterm,midterm_problem_1,midterm_problem_1_system,midterm_problem_2,midterm_problem_2_system,midterm_system,stopwatch,stopwatch_system,system_wrapper,tone_detection,tone_detection_system}
+timestamp=[2021-03-15 16:23:00], mode=APP_CREATION, duration=0:00:05.822, duration_ms=5822, data={name=final_2, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=system_wrapper, application_type=application}
+timestamp=[2021-03-15 16:23:52], mode=BUILD, duration=0:00:00.353, duration_ms=353, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:24:05], mode=BUILD, duration=0:00:07.709, duration_ms=7709, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:26:32], mode=BUILD, duration=0:00:00.487, duration_ms=487, data={name=final_2, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:26:40], mode=BUILD, duration=0:00:07.064, duration_ms=7064, data={name=final_2_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:28:05], mode=BUILD, duration=0:00:00.379, duration_ms=379, data={name=final_2, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:28:12], mode=BUILD, duration=0:00:06.783, duration_ms=6783, data={name=final_2_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:29:51], mode=PLATFORM_GENERATION, duration=0:00:07.332, duration_ms=7332, data={name=system_wrapper}
+timestamp=[2021-03-15 16:29:51], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=final_2, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:29:51], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=final_2_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:30:39], mode=PLATFORM_GENERATION, duration=0:00:17.124, duration_ms=17124, data={name=system_wrapper}
+timestamp=[2021-03-15 16:30:41], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:30:54], mode=BUILD, duration=0:00:06.695, duration_ms=6695, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:30:55], mode=BUILD, duration=0:00:00.273, duration_ms=273, data={name=final_1, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:31:02], mode=BUILD, duration=0:00:06.696, duration_ms=6696, data={name=final_1_system, configuration=Debug, clean_build=false}
+timestamp=[2021-03-15 16:32:49], mode=PLATFORM_GENERATION, duration=0:00:05.732, duration_ms=5732, data={name=system_wrapper}
+timestamp=[2021-03-15 16:32:49], mode=BUILD, duration=0:00:00.180, duration_ms=180, data={name=final_1, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:32:49], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=final_1_system, configuration=Debug, clean_build=true}
+timestamp=[2021-03-15 16:33:13], mode=PLATFORM_GENERATION, duration=0:00:05.502, duration_ms=5502, data={name=system_wrapper}
